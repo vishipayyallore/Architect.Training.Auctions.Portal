@@ -1,0 +1,66 @@
+{
+    "environmentSettings": {
+        "cloudService": {
+            "name": "AuctionsPortal",
+            "affinityGroup": "",
+            "location": "East US",
+            "virtualNetwork": "",
+            "subnet": "",
+            "availabilitySet": "",
+            "virtualMachine": {
+                "name": "AuctionsPortal",
+                "vhdImage": "03f55de797f546a1b29d1b8d66be687a__Visual-Studio-2013-Premium-Update2-AzureSDK-2.3-WS2012",
+                "size": "Basic_A3",
+                "user": "demouser",
+                "password": "",
+                "enableWebDeployExtension": true,
+                "endpoints": [
+                    {
+                        "name": "Http",
+                        "protocol": "TCP",
+                        "publicPort": "80",
+                        "privatePort": "80"
+                    },
+                    {
+                        "name": "Https",
+                        "protocol": "TCP",
+                        "publicPort": "443",
+                        "privatePort": "443"
+                    },
+                    {
+                        "name": "WebDeploy",
+                        "protocol": "TCP",
+                        "publicPort": "8172",
+                        "privatePort": "8172"
+                    },
+                    {
+                        "name": "Remote Desktop",
+                        "protocol": "TCP",
+                        "publicPort": "3389",
+                        "privatePort": "3389"
+                    },
+                    {
+                        "name": "Powershell",
+                        "protocol": "TCP",
+                        "publicPort": "5986",
+                        "privatePort": "5986"
+                    }
+                ],
+                "isVMImage": false,
+                "isGeneralizedImage": true
+            }
+        },
+        "databases": [
+            {
+                "connectionStringName": "",
+                "databaseName": "",
+                "serverName": "",
+                "user": "",
+                "password": ""
+            }
+        ],
+        "webDeployParameters": {
+            "iisWebApplicationName": "Default Web Site"
+        }
+    }
+}
