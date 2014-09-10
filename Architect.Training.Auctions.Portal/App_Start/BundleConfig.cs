@@ -21,10 +21,12 @@ namespace Architect.Training.Auctions.Portal
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/rowlink.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/ubuntu.theme.css",
                       "~/Content/site.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
