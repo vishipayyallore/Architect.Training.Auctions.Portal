@@ -1,12 +1,12 @@
 --Users {shiva.sai@citigroup.com}
-select * from AspNetUsers;
+select * from AspNetUsers order by Email;
 
 select * from RegisteredOrganization;
 select * from RegisteredUsers;
 select * from Auctions;
 select * from Bids;
 
-delete AspNetUsers where UserName in ( 'ali.azim', 'shiva.sai' );
+--admin.buycompany1 admin.sellcompany1 admin.sellcompany2
 
 select * from RegisteredUsers where UserId = 
 (select Id from AspNetUsers where Email = 'shiva.sai@citigroup.com')
