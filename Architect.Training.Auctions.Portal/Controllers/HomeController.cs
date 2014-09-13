@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Architect.Training.Auctions.Portal.Data;
 
 namespace Architect.Training.Auctions.Portal.Controllers
 {
     public class HomeController : Controller
     {
+
+        //Variables
+        private ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public ActionResult Index()
         {
             return View();

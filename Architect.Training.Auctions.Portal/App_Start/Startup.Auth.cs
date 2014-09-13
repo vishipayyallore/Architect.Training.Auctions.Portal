@@ -1,4 +1,5 @@
 ﻿using System;
+using Architect.Training.Auctions.Portal.Data;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;

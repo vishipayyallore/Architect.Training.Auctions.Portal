@@ -48,3 +48,15 @@ D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training
 D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\obj\Debug\Architect.Training.Auctions.Portal.Tests.csprojResolveAssemblyReference.cache
 D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\obj\Debug\Architect.Training.Auctions.Portal.Tests.dll
 D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\obj\Debug\Architect.Training.Auctions.Portal.Tests.pdb
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\StructureMap.dll
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\StructureMap.pdb
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\StructureMap.xml
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\StructureMap.Net4.dll
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\StructureMap.Net4.pdb
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\WebActivatorEx.dll
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\StructureMap.Web.dll
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\StructureMap.Web.pdb
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal.Tests\bin\Debug\StructureMap.Web.xml
