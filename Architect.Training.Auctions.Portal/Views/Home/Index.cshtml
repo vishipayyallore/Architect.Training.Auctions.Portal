@@ -1,9 +1,12 @@
-﻿@{
+﻿@using Architect.Training.Auctions.Portal.Controllers
+
+@{
     ViewBag.Title = "Home Page";
 }
 
 <br />
 
 <div class="row">
-    
+    <p>@Html.Action("RetrieveInformation", "Sample", new { area = "" })</p>
+    <p>@Html.Action("RetrieveInformation", "Sample", new { area = "" })</p>
 </div>

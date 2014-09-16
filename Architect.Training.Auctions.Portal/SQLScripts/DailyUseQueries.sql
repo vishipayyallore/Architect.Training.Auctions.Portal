@@ -5,6 +5,7 @@ select * from RegisteredOrganization;
 select * from RegisteredUsers;
 select * from Auctions;
 select * from Bids;
+select * from LogActions;
 
 --admin.buycompany1 admin.sellcompany1 admin.sellcompany2
 
