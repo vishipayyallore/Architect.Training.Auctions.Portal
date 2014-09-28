@@ -18,7 +18,6 @@
 using System.Security.Principal;
 using System.Web;
 using System.Web.Mvc;
-using Architect.Training.Auctions.Portal.App_Start;
 using Architect.Training.Auctions.Portal.Controllers;
 using Architect.Training.Auctions.Portal.Data;
 using Architect.Training.Auctions.Portal.Models;
@@ -36,26 +35,6 @@ namespace Architect.Training.Auctions.Portal.DependencyResolution {
                 scan => {
                     scan.TheCallingAssembly();
                     scan.WithDefaultConventions();
-                    scan.TheCallingAssembly();
-					scan.With(new ControllerConvention());
-
-                    //Additional refernces for the application to start with ...
-                    For<Microsoft.AspNet.Identity.IUserStore<ApplicationUser>>().Use<Microsoft.AspNet.Identity.EntityFramework.UserStore<ApplicationUser>>();
-                    For<System.Data.Entity.DbContext>().Use(() => new ApplicationDbContext());
-                    For<Microsoft.Owin.Security.IAuthenticationManager>().Use(() => HttpContext.Current.GetOwinContext().Authentication);
-                    
-                    //Gives us the current logged in user.
-                    For<IIdentity>().Use(() => HttpContext.Current.User.Identity);
-                    
-                    //For Action Filters
-                    For<IFilterProvider>().Use(new AuctionsFilterProvider(() => StructuremapMvc.StructureMapDependencyScope.Container));
-                    //Setting the Properties of Action Filter
-                    Policies.SetAllProperties(x =>
-                        x.Matching(p =>
-                                    p.DeclaringType.CanBeCastTo(typeof(ActionFilterAttribute)) &&
-                                    p.DeclaringType.Namespace.StartsWith("Architect.Training.Auctions.Portal") &&
-                                    !p.PropertyType.IsPrimitive &&
-                                    p.PropertyType != typeof(string)));
                 });
         
         }

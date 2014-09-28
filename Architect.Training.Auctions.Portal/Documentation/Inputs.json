@@ -1,0 +1,4 @@
+﻿{ "VMsList": [ { "Name": "demovm1foreast", "ServiceName": "democsforeast", "OSVhdName": "democsforeast-demovm1foreast-2014-09-27.vhd", "RestoreDate": "09/27/2014 21:54:18 +00:00", "VMStateFileName": "demovm1foreast09272014195832.xml", "TargetCloudService": "democsfornorth1", "TargetContainerUrl": "https://demostoragefortarget.blob.core.windows.net/vhds/", "TargetStorageAccount": "demostoragefortarget", "DataDisks": [ ] } ] }
+
+{ "VMsList": [ { "Name": "demovm1foreast", "ServiceName": "democsforeast", "OSVhdName": "democsforeast-demovm1foreast-2014-09-27.vhd", "RestoreDate": "09/27/2014 22:02:26 +00:00", "VMStateFileName": "demovm1foreast09272014195832.xml", "TargetCloudService": "democsfornorth1", "TargetContainerUrl": "https://demostoragefortarget.blob.core.windows.net/vhds/", "TargetStorageAccount": "demostoragefortarget", "DataDisks": [ ] } ] }
+

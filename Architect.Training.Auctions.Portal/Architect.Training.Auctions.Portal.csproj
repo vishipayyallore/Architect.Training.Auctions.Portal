@@ -181,6 +181,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SeedData.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -189,12 +190,21 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SampleController.cs" />
     <Compile Include="Data\ApplicationDbContext.cs" />
+    <Compile Include="DependencyResolution\ActionFilterRegistry.cs" />
     <Compile Include="DependencyResolution\AuctionsFilterProvider.cs" />
     <Compile Include="DependencyResolution\ControllerConvention.cs" />
+    <Compile Include="DependencyResolution\ControllerRegistry.cs" />
     <Compile Include="DependencyResolution\DefaultRegistry.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
+    <Compile Include="DependencyResolution\MvcRegistry.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
     <Compile Include="DependencyResolution\StructureMapScopeModule.cs" />
+    <Compile Include="DependencyResolution\Tasks\IRunAfterEachRequest.cs" />
+    <Compile Include="DependencyResolution\Tasks\IRunAtInit.cs" />
+    <Compile Include="DependencyResolution\Tasks\IRunAtStartup.cs" />
+    <Compile Include="DependencyResolution\Tasks\IRunOnEachRequest.cs" />
+    <Compile Include="DependencyResolution\Tasks\IRunOnError.cs" />
+    <Compile Include="DependencyResolution\TaskRegistry.cs" />
     <Compile Include="Filters\LogAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -223,6 +233,7 @@
     <Content Include="Documentation\AuctionApp_RequirementSpecification.docx" />
     <Content Include="Documentation\AuctionApp_TechnicalApproach.docx" />
     <Content Include="Documentation\Auctions_Database.xlsx" />
+    <Content Include="Documentation\Inputs.json" />
     <None Include="Properties\PublishProfiles\auctionsportal.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

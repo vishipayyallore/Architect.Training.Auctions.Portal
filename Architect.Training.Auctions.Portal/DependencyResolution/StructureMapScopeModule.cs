@@ -1,8 +1,5 @@
 namespace Architect.Training.Auctions.Portal.DependencyResolution {
     using System.Web;
-
-    using Architect.Training.Auctions.Portal.App_Start;
-
     using StructureMap.Web.Pipeline;
 
     public class StructureMapScopeModule : IHttpModule {

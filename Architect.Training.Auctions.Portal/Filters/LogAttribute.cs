@@ -14,8 +14,6 @@ namespace Architect.Training.Auctions.Portal.Filters
     {
 
         private IDictionary<string, object> _parameters;
-
-
         public ApplicationDbContext Context { get; set; }
         public ICurrentUser CurrentUser { get; set; }
         public string Description { get; set; }

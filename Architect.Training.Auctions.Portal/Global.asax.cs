@@ -10,6 +10,7 @@ using System.Web.Routing;
 using Architect.Training.Auctions.Portal.Controllers;
 using Architect.Training.Auctions.Portal.Data;
 //using Architect.Training.Auctions.Portal.Infrastructure;
+using Architect.Training.Auctions.Portal.DependencyResolution.Tasks;
 using Architect.Training.Auctions.Portal.Models;
 using StructureMap;
 using StructureMap.Graph;
@@ -27,6 +28,19 @@ namespace Architect.Training.Auctions.Portal
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            StructuremapMvc.StructureMapDependencyScope.CreateNestedContainer();
+            using (var container = StructuremapMvc.StructureMapDependencyScope.CurrentNestedContainer)
+            {
+                foreach (var task in container.GetAllInstances<IRunAtInit>())
+                {
+                    task.Execute();
+                }
+
+                foreach (var task in container.GetAllInstances<IRunAtStartup>())
+                {
+                    task.Execute();
+                }
+            }
         }
     
     }

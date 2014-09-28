@@ -27,6 +27,8 @@ sellcompany2
 	-user2@sellcompany2.com
 
 
+	 
+	-- See more at: http://blinkenjob.com/how-to-extract-only-alphanumeric-character-from-string/#sthash.f6WtGuWY.dpuf
 
 
 
