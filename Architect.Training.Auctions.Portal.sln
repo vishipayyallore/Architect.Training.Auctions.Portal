@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 		PublishScripts\Configurations\Architect.Training.Auctions.Portal-VM-dev.json = PublishScripts\Configurations\Architect.Training.Auctions.Portal-VM-dev.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architect.Training.Auctions.Service", "Architect.Training.Auctions.Service\Architect.Training.Auctions.Service.csproj", "{CC4E289E-B3B6-4F30-85AB-00C58BAE6B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architect.Training.Auctions.Service.Tests", "Architect.Training.Auctions.Service.Tests\Architect.Training.Auctions.Service.Tests.csproj", "{161C9EFE-D43C-48E2-BBDF-DB87A7D2496F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{29D6AD49-3C3E-4AE5-9FE6-0198ECA9BF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D6AD49-3C3E-4AE5-9FE6-0198ECA9BF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29D6AD49-3C3E-4AE5-9FE6-0198ECA9BF67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC4E289E-B3B6-4F30-85AB-00C58BAE6B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4E289E-B3B6-4F30-85AB-00C58BAE6B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4E289E-B3B6-4F30-85AB-00C58BAE6B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4E289E-B3B6-4F30-85AB-00C58BAE6B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{161C9EFE-D43C-48E2-BBDF-DB87A7D2496F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{161C9EFE-D43C-48E2-BBDF-DB87A7D2496F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{161C9EFE-D43C-48E2-BBDF-DB87A7D2496F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{161C9EFE-D43C-48E2-BBDF-DB87A7D2496F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

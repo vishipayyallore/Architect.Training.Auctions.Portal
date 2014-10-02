@@ -23,7 +23,8 @@
                     @if (Request.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("New Issue", "New", "Sample")</li>
+                        @*<li>@Html.ActionLink("New Issue", "New", "Sample")</li>*@
+                        <li>@Html.ActionLink("New Auction", "CreateNewAuction", "Auction")</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")

@@ -23,7 +23,11 @@ namespace Architect.Training.Auctions.Portal.Data
         }
 
         #region Tables
+        /// <summary>
+        /// Log Table
+        /// </summary>
         public DbSet<LogAction> Logs { get; set; }
+        public DbSet<RegisteredUsers> RegisteredUsers { get; set; }
         #endregion
 
         protected override void Dispose(bool disposing)
