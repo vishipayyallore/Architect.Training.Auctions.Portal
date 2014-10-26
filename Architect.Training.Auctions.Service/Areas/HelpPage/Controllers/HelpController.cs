@@ -13,12 +13,19 @@ namespace Architect.Training.Auctions.Service.Areas.HelpPage.Controllers
     {
         private const string ErrorViewName = "Error";
 
+
         public HelpController()
             : this(GlobalConfiguration.Configuration)
         {
         }
 
-        public HelpController(HttpConfiguration config)
+        /// <summary>
+        ///  the issue was that there are two constructors in the HelpController. One that takes an HttpConfiguration, 
+        /// and another that takes a GlobalConfiguration. I forced StructureMap to call the GlobalConfiguration 
+        /// constuctor by making the Http constructor private
+        /// </summary>
+        /// <param name="config"></param>
+        private HelpController(HttpConfiguration config)
         {
             Configuration = config;
         }

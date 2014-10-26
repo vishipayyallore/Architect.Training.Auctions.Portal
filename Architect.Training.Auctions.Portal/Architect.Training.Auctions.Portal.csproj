@@ -184,6 +184,7 @@
     <Compile Include="App_Start\SeedData.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="App_Start\StructuremapWebApi.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuctionController.cs" />
@@ -200,6 +201,8 @@
     <Compile Include="DependencyResolution\MvcRegistry.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
     <Compile Include="DependencyResolution\StructureMapScopeModule.cs" />
+    <Compile Include="DependencyResolution\StructureMapWebApiDependencyResolver.cs" />
+    <Compile Include="DependencyResolution\StructureMapWebApiDependencyScope.cs" />
     <Compile Include="DependencyResolution\Tasks\IRunAfterEachRequest.cs" />
     <Compile Include="DependencyResolution\Tasks\IRunAtInit.cs" />
     <Compile Include="DependencyResolution\Tasks\IRunAtStartup.cs" />

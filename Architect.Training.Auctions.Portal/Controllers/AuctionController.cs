@@ -32,6 +32,8 @@ namespace Architect.Training.Auctions.Portal.Controllers
 
         public ActionResult CreateNewAuction()
         {
+            var theUser = _currentUser;
+
             return View();
         }
 
@@ -44,7 +46,7 @@ namespace Architect.Training.Auctions.Portal.Controllers
             {
                 //return 
             }
-
+            
 
             return View();
         }
