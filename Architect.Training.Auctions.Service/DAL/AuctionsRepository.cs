@@ -37,12 +37,33 @@ namespace Architect.Training.Auctions.Service.DAL
         {
             //Variables.
             var auctionsList = new AuctionsListDto();
+            auctionsList.CurrentAuctions = new List<AuctionItem>();
 
-            var currentUser = _auctionsDbContext.RegisteredUsers.SingleOrDefault(user => (user.UserId == userId));
+            auctionsList.CurrentUser = _auctionsDbContext.RegisteredUsers.SingleOrDefault(user => (user.UserId == userId));
+            if (auctionsList.CurrentUser == null)
+            {
+                return auctionsList;
+            }
 
-            //throw new NotImplementedException();
+            var auctionRows = from auction in _auctionsDbContext.Auctions
+                              where auction.BuyerId == auctionsList.CurrentUser.Id
+                              select auction;
 
-            return null;
+            foreach (var auctionRow in auctionRows)
+            {
+                var auctionItem = new AuctionItem
+                {
+                    CurrentBids =
+                        (from bid in _auctionsDbContext.Bids 
+                         orderby bid.Amount ascending 
+                         where bid.AuctionId == auctionRow.Id 
+                         select bid).ToList(),
+                    CurrentAuction = auctionRow
+                };
+                auctionsList.CurrentAuctions.Add(auctionItem);
+            }
+
+            return auctionsList;
         }
 
         //public async Task<IHttpActionResult> GetAllAuctions(string userId)

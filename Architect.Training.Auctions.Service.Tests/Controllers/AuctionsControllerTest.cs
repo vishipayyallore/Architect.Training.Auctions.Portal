@@ -19,7 +19,7 @@ namespace Architect.Training.Auctions.Service.Tests.Controllers
         public void GivenUserIdShouldReturnAllAuctions()
         {
 
-            var serviceDbContext = new AuctionsServiceDbContext();
+            var serviceDbContext = AuctionsServiceDbContext.Create();
             var auctionsRepository = new AuctionsRepository(serviceDbContext);
             var auctionsController = new AuctionsController(auctionsRepository);
 
