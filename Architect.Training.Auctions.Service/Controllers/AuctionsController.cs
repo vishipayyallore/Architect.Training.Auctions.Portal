@@ -35,7 +35,7 @@ namespace Architect.Training.Auctions.Service.Controllers
                 userId = "b54b869c-127d-4b17-9d46-67f077105415";
             }
             
-            var auctions = await _auctionsRepository.GetAllAuctions(userId);
+            var auctions = _auctionsRepository.GetAllAuctions(userId);
             
             if (auctions == null)
             {

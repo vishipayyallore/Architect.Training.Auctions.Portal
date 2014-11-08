@@ -12,7 +12,7 @@ namespace Architect.Training.Auctions.Service.Models.Domain
         
         public TimeSpan TimeRemaining
         {
-            get { return (CurrentAuction.EndTime - CurrentAuction.StartTime) - (DateTime.Now - CurrentAuction.StartTime); }
+            get { return (CurrentAuction.EndDateTime - CurrentAuction.StartDateTime) - (DateTime.Now - CurrentAuction.StartDateTime); }
         }
 
         public Bid LowestBid

@@ -33,7 +33,7 @@ namespace Architect.Training.Auctions.Service.DAL
         }
 
         #region Auctions Repository Methods.
-        public async Task<AuctionsListDto> GetAllAuctions(string userId)
+        public AuctionsListDto GetAllAuctions(string userId)
         {
             //Variables.
             var auctionsList = new AuctionsListDto();
@@ -49,38 +49,21 @@ namespace Architect.Training.Auctions.Service.DAL
                               where auction.BuyerId == auctionsList.CurrentUser.Id
                               select auction;
 
-            foreach (var auctionRow in auctionRows)
+            foreach (var auctionItem in auctionRows.Select(auctionRow => new AuctionItem
             {
-                var auctionItem = new AuctionItem
-                {
-                    CurrentBids =
-                        (from bid in _auctionsDbContext.Bids 
-                         orderby bid.Amount ascending 
-                         where bid.AuctionId == auctionRow.Id 
-                         select bid).ToList(),
-                    CurrentAuction = auctionRow
-                };
+                CurrentBids =
+                    (from bid in _auctionsDbContext.Bids 
+                        orderby bid.Amount ascending 
+                        where bid.AuctionId == auctionRow.Id 
+                        select bid).ToList(),
+                CurrentAuction = auctionRow
+            }))
+            {
                 auctionsList.CurrentAuctions.Add(auctionItem);
             }
 
             return auctionsList;
         }
-
-        //public async Task<IHttpActionResult> GetAllAuctions(string userId)
-        //{
-            
-
-        //    ////Retrieving the User Information.
-        //    ////await _auctionsDbContext.Set<RegisteredUser>().SingleOrDefault(user => user.UserId == userId);
-        //    //var currentUser = _auctionsDbContext.RegisteredUsers.SingleOrDefault(user => (user.UserId == userId));
-        //    //if (currentUser == null)
-        //    //{
-        //    //    //TODO: Throw exception
-        //    //    //return NotFound();
-        //    //}
-
-        //    throw new NotImplementedException();
-        //}
 
         public async Task<IHttpActionResult> AddAuction(AuctionDto currentAuctionDto)
         {

@@ -17,8 +17,8 @@ namespace Architect.Training.Auctions.Service.Models.Domain
         public Int64 BuyerId { get; set; }
         public String ItemName { get; set; }
         public String Description { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime EndTime { get; set; }
+        public DateTime StartDateTime { get; set; }
+        public DateTime EndDateTime { get; set; }
         public DateTime CreatedDateTime { get; set; }
 
     }

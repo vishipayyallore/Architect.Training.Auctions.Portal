@@ -20,7 +20,7 @@ namespace Architect.Training.Auctions.Service.DAL
     {
 
         #region Methods
-        Task<AuctionsListDto> GetAllAuctions(String userId);
+        AuctionsListDto GetAllAuctions(String userId);
 
         Task<IHttpActionResult> AddAuction(AuctionDto currentAuctionDto);
 
