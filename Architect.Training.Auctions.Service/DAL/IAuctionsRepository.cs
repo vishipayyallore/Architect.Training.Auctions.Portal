@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 using Architect.Training.Auctions.Service.Models;
+using Architect.Training.Auctions.Service.Models.Domain;
 using Architect.Training.Auctions.Service.Models.DTO;
 
 namespace Architect.Training.Auctions.Service.DAL
@@ -22,8 +23,9 @@ namespace Architect.Training.Auctions.Service.DAL
         #region Methods
         AuctionsListDto GetAllAuctions(String userId);
 
-        Task<IHttpActionResult> AddAuction(AuctionDto currentAuctionDto);
+        Task<Int64> AddAuction(Auction currentAuction);
 
+        Task<Int64> AddBid(Bid currentBid);
         #endregion
 
     }

@@ -249,6 +249,7 @@
     <Compile Include="Models\Domain\LogAction.cs" />
     <Compile Include="Models\Domain\RegisteredUsers.cs" />
     <Compile Include="Models\DTO\AuctionsListDto.cs" />
+    <Compile Include="Models\DTO\BidDto.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />

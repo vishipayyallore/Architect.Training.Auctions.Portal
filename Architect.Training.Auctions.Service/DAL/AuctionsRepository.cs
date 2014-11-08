@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Description;
 using Architect.Training.Auctions.Service.Data;
 using Architect.Training.Auctions.Service.Models;
 using Architect.Training.Auctions.Service.Models.Domain;
@@ -62,12 +63,45 @@ namespace Architect.Training.Auctions.Service.DAL
                 auctionsList.CurrentAuctions.Add(auctionItem);
             }
 
+            //TODO: [Query] Do we need to log Error information from Web API???
+
             return auctionsList;
         }
 
-        public async Task<IHttpActionResult> AddAuction(AuctionDto currentAuctionDto)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="currentAuction"></param>
+        /// <returns></returns>
+        public async Task<Int64> AddAuction(Auction currentAuction)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _auctionsDbContext.Auctions.Add(currentAuction);
+                return await _auctionsDbContext.SaveChangesAsync();
+            }
+            catch (Exception exception)
+            {
+                var message = exception.Message;
+                throw;
+            }
+            
+            //TODO: [Query] Do we need to log Error information from Web API???
+        }
+
+        public async Task<Int64> AddBid(Bid currentBid)
+        {
+            try
+            {
+                _auctionsDbContext.Bids.Add(currentBid);
+                return await _auctionsDbContext.SaveChangesAsync();
+            }
+            catch (Exception exception)
+            {
+                var message = exception.Message;
+                throw;
+            }
+            //TODO: [Query] Do we need to log Error information from Web API???
         }
         #endregion
 

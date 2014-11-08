@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Architect.Training.Auctions.Service.Models.Domain
+namespace Architect.Training.Auctions.Service.Models.DTO
 {
-    public class Bid
+    public class BidDto
     {
         public Int64 Id { get; set; }
         public Int64 AuctionId { get; set; }
