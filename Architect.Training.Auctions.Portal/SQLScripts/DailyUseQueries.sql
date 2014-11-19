@@ -8,6 +8,7 @@ select * from Bids;
 select * from LogActions;
 
 --admin.buycompany1 admin.sellcompany1 admin.sellcompany2
+-- 01-Jan-2015 09:0:00
 
 select * from RegisteredUsers where UserId = 
 (select Id from AspNetUsers where Email = 'shiva.sai@citigroup.com')

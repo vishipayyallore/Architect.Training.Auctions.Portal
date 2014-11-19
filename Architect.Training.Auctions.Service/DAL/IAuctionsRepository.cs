@@ -21,11 +21,10 @@ namespace Architect.Training.Auctions.Service.DAL
     {
 
         #region Methods
-        AuctionsListDto GetAllAuctions(String userId);
+        AuctionsListDto GetAllAuctionsOfAUser(String userId);
 
         Task<Int64> AddAuction(Auction currentAuction);
 
-        Task<Int64> AddBid(Bid currentBid);
         #endregion
 
     }

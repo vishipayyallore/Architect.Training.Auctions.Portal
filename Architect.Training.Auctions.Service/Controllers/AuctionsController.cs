@@ -39,7 +39,7 @@ namespace Architect.Training.Auctions.Service.Controllers
                 userId = "b54b869c-127d-4b17-9d46-67f077105415";
             }
             
-            var auctions = _auctionsRepository.GetAllAuctions(userId);
+            var auctions = _auctionsRepository.GetAllAuctionsOfAUser(userId);
             
             if (auctions == null)
             {
@@ -81,28 +81,7 @@ namespace Architect.Training.Auctions.Service.Controllers
             return CreatedAtRoute("DefaultApi", new { id = currentAuctionDto.Id }, currentAuctionDto);
         }
 
-        public async Task<IHttpActionResult> PostBid(BidDto currentBidDto)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            //TODO: Need to write the Auto Mapper Stuff
-            var currentBid = new Bid()
-            {
-                AuctionId = currentBidDto.AuctionId,
-                SupplierId = currentBidDto.SupplierId,
-                Amount = currentBidDto.Amount
-            };
-
-            await _auctionsRepository.AddBid(currentBid);
-
-            //Store the Id back into DTO object
-            currentBidDto.Id = currentBid.Id;
-
-            return CreatedAtRoute("DefaultApi", new { id = currentBidDto.Id }, currentBidDto);
-        }
+        
         #endregion
 
     }

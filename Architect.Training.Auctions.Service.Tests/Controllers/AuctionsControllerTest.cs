@@ -27,7 +27,7 @@ namespace Architect.Training.Auctions.Service.Tests.Controllers
             var auctionsController = new AuctionsController(auctionsRepository);
 
             var results = auctionsController.GetAllAuctions(string.Empty);
-            //GetAllAuctions
+            //GetAllAuctionsOfAUser
         }
 
         [TestMethod]
@@ -52,17 +52,17 @@ namespace Architect.Training.Auctions.Service.Tests.Controllers
         public void GivenValidBidDetailsSentShouldPersistInDb()
         {
             var serviceDbContext = AuctionsServiceDbContext.Create();
-            var auctionsRepository = new AuctionsRepository(serviceDbContext);
-            var auctionsController = new AuctionsController(auctionsRepository);
+            var bidsRepository = new BidsRepository(serviceDbContext);
+            var bidsController = new BidsController(bidsRepository);
             
             var currentBid = new BidDto
             {
                 AuctionId = 1,
-                SupplierId = 3,
-                Amount = 10.34M
+                SupplierId = 6,
+                Amount = 9.97M
             };
 
-            var results = auctionsController.PostBid(currentBid);
+            var results = bidsController.PostBid(currentBid);
         }
     }
 

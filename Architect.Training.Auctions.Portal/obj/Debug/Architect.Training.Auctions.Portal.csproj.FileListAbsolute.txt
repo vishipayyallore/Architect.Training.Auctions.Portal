@@ -70,3 +70,4 @@ D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training
 D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal\obj\Debug\Architect.Training.Auctions.Portal.dll
 D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal\obj\Debug\Architect.Training.Auctions.Portal.pdb
+D:\LordKrishna\LaxmiHayagriva\SoftwareArchitect\Code\Auctions\Architect.Training.Auctions.Portal\Architect.Training.Auctions.Portal\obj\Debug\Architect.Training.Auctions.Portal.csprojResolveAssemblyReference.cache

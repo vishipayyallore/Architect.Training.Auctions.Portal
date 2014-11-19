@@ -34,7 +34,7 @@ namespace Architect.Training.Auctions.Service.DAL
         }
 
         #region Auctions Repository Methods.
-        public AuctionsListDto GetAllAuctions(string userId)
+        public AuctionsListDto GetAllAuctionsOfAUser(string userId)
         {
             //Variables.
             var auctionsList = new AuctionsListDto();
@@ -89,20 +89,7 @@ namespace Architect.Training.Auctions.Service.DAL
             //TODO: [Query] Do we need to log Error information from Web API???
         }
 
-        public async Task<Int64> AddBid(Bid currentBid)
-        {
-            try
-            {
-                _auctionsDbContext.Bids.Add(currentBid);
-                return await _auctionsDbContext.SaveChangesAsync();
-            }
-            catch (Exception exception)
-            {
-                var message = exception.Message;
-                throw;
-            }
-            //TODO: [Query] Do we need to log Error information from Web API???
-        }
+        
         #endregion
 
         #region Disposing Logic
